@@ -24,12 +24,16 @@ Postconditions: displays the conversion table
 */
 void displayTable()
 {
-	cout << "Fahrenheit\tCelsius" << endl;
-	cout << "-------------------------" << endl;
 
-	cout << setw(15) << "Fahrenheit"
-		<< setw(15) << "Celsius" << endl;
+		cout << "---------------------------------\n";
+		cout << "   Fahrenheit to Celsius Table\n";
+		cout << "---------------------------------\n";
 
+		cout << setw(15) << "Fahrenheit"
+			<< setw(15) << "Celsius" << endl;
+
+		cout << setw(15) << "-----------"
+			<< setw(15) << "---------" << endl;
 
 	//Loop to display the conversion table
 	for (int fahrenheit = MIN_FAHRENHEIT; fahrenheit <= MAX_FAHRENHEIT; fahrenheit++)
